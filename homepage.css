@@ -75,14 +75,13 @@ body{
 }
 
 .parallax {
-    height: 100vh;
+    height: 100％;
     width: 100%;
     background-image: url("images/咖波屋標誌.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 .shield {
