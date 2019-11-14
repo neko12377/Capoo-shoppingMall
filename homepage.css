@@ -50,6 +50,7 @@ body{
         background-position-y: 80%;
 
     }
+
 }
 
 @media (min-width: 576px) {
@@ -64,22 +65,7 @@ body{
     }
 }
 
-@media (max-width: 768px) {
-    .minusMg{
-        margin: 0 -0.5rem 0 0;
-    }
-
-    .capooBottom {
-        display: none !important;
-    }
-}
-
-.banner {
-    overflow: hidden;
-}
-
 .parallax {
-    max-width: 100%;
     height: 100vh;
     width: 100%;
     background-image: url("images/咖波屋標誌.png");
@@ -88,6 +74,25 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@media (max-width: 768px) {
+    .minusMg{
+        margin: 0 -0.5rem 0 0;
+    }
+
+    .capooBottom {
+        display: none !important;
+    }
+
+    .parallax {
+        background-color: red;
+    }
+}
+
+.banner {
+    overflow: hidden;
+}
+
 
 .shield {
     width: 100%;
@@ -102,24 +107,4 @@ body{
 
 footer {
     background-color: #bd8a63;
-}
-
-.bg-card{
-    background-color: rgb(223, 105, 31);
-}
-
-.bg-card2{
-    background-color: rgb(177, 58, 22);
-}
-
-.bg-card3{
-    background-color: rgb(154, 70, 17);
-}
-
-.bg-card4{
-    background-color: rgb(113, 34, 10);
-}
-
-.card-text {
-    color: rgb(255, 252, 214);
 }
