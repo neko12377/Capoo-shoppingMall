@@ -130,3 +130,15 @@ body{
 footer {
     background-color: #bd8a63;
 }
+
+.icon {
+    font-size: 2rem;
+}
+.icon2 {
+    margin-left: 1rem;
+    color: rgb(196, 66, 134);
+}
+
+.icon2:hover {
+    color: rgb(174, 57, 117);
+}
