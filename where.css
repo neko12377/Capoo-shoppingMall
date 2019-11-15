@@ -1,0 +1,18 @@
+.bg-dropDown{
+    background-color: #ffa35d;
+}
+
+body{
+    background-color: rgba(203, 168, 116, 0.913);
+}
+
+.gmap {
+   margin-top: 58px;
+   height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .minusMg{
+        margin: 0 -0.5rem 0 0;
+    }
+}
