@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgba(203, 168, 116, 0.913);
 }
@@ -129,6 +133,7 @@ body{
 
 footer {
     background-color: #bd8a63;
+    color: #3f1a0b;
 }
 
 .icon {
@@ -141,4 +146,13 @@ footer {
 
 .icon2:hover {
     color: rgb(174, 57, 117);
+}
+
+.address {
+    color: #3f1a0b;
+}
+
+.address:hover {
+    color:#742112;
+    text-decoration: none;
 }
