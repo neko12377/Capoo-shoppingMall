@@ -1,18 +1,41 @@
-.bg-dropDown{
-    background-color: #ffa35d;
+body{
+    background-image: linear-gradient(120deg, #ffeb09 0%, #fab070 30%, #b37518 100%);
+    background-attachment: fixed;
+    background-repeat: none;
 }
 
-body{
-    background-color: rgba(203, 168, 116, 0.913);
+.navbarMT {
+    margin-top:10%;
+}
+
+.addressP {
+    padding-top: 20%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+.address {
+    padding-top: 5%;
+    padding-left: 5%;
+    color: rgb(91, 44, 15);
 }
 
 .gmap {
-   margin-top: 58px;
-   height: 100vh;
+   height: 50vh;
 }
 
 @media (max-width: 768px) {
     .minusMg{
         margin: 0 -0.5rem 0 0;
+    }
+
+    .navbarMT {
+        margin-top:68px;
+    }
+
+    .addressP {
+        padding-top: 5%;
+        padding-left: 5%;
+        width: 100%;
     }
 }

@@ -1,0 +1,13 @@
+.bg-dropDown{
+    background-color: #ffa35d;
+}
+
+.badge {
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .minusMg{
+        margin: 0 -0.5rem 0 0;
+    }
+}
