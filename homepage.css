@@ -11,14 +11,22 @@ body{
 }
 
 .introducing-Block {
-    padding-top: 6rem;
+    padding-top: 4rem;
+}
+
+.introducing-Text-Block_02 {
+    margin-top: 2rem;
 }
 
 .introducing-Text {
     color: rgb(85, 59, 2);
 }
 
-@media (min-width: 769px){
+.capooBottom {
+    display: none;
+}
+
+@media (min-width: 992px){
     .introducing-Text-Block {
         padding-top: 8rem;
     } 
@@ -32,22 +40,18 @@ body{
         overflow: hidden;
     }
 
-    .money {
-        justify-content: center;
-        align-items: flex-end;
-    }
-
     .banner {
         height: 100vh;
-    }
+    }   
+}
 
+@media (min-width: 1366px){
     .capooBottom {
-        background-image: url("images/搖屁屁.gif");
-        background-repeat: no-repeat;
-        background-position-y: 80%;
-
+        display: inline-block;
+        position: relative;
+        bottom: 4rem;
+        overflow: visible;
     }
-
 }
 
 @media (min-width: 576px) {
@@ -83,14 +87,6 @@ body{
     .headCommercial {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
-    
-    .capooBottom {
-        display: none !important;
-    }
-
 }
 
 .banner {
