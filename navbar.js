@@ -15,10 +15,16 @@ $(function(){
 
     $(".fa-cog")[0].onmouseover = function(){
         $(".fa-cog")[0].classList.add("fa-spin");
+    }
+
+    $(".fa-cog")[0].onmouseout = function(){
         setTimeout(function(){
             $(".fa-cog")[0].classList.remove("fa-spin");
-        },3000);
+        }, 1500);
     }
+    
+
+    
 
     $(".fa-cog")[0].onclick = function(){
         $(".fa-cog")[0].classList.add("fa-spin");
