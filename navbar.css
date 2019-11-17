@@ -2,8 +2,20 @@
     background-color: #ffa35d;
 }
 
+.icon {
+    font-size: 1.2rem;
+}
+
 .badge {
     border-radius: 50%;
+    position: relative;
+    bottom: 2px;
+}
+
+.userIcon {
+    font-size: 1.4rem;
+    position: relative;
+    top: 1px;
 }
 
 @media (max-width: 768px) {
