@@ -37,6 +37,10 @@ $(function(){
         $(".downList")[0].style.display = "flex";
     }
 
+    $(".userIcon")[0].onclick = function(){
+        $(".downList")[0].style.display = "flex";
+    }
+
     document.body.onclick = function(){
         $(".downList")[0].style.display = "none";
     }
