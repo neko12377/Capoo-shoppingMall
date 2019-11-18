@@ -33,13 +33,18 @@ $(function(){
     let shoppingList = [];
     $(".badge")[0].innerHTML = shoppingList.length;
 
-    $(".userIcon")[0].onmouseover = function(){
-        $(".downList")[0].style.display = "flex";
-    }
-
-    $(".userIcon")[0].onclick = function(){
-        $(".downList")[0].style.display = "flex";
-    }
+    $(window).resize(function(){
+        let x = $(window).width;
+        if (x >= 992) {
+            $(".userIcon")[0].onmouseover = function(){
+                $(".downList")[0].style.display = "flex";
+            }
+        }else{
+            $(".userIcon")[0].onclick = function(){
+                $(".downList")[0].style.display = "flex";
+            }
+        }
+    })
 
     document.body.onclick = function(){
         $(".downList")[0].style.display = "none";
