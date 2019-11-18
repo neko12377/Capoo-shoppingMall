@@ -6,10 +6,6 @@ body{
     background-color: rgba(203, 168, 116, 0.913);
 }
 
-.itemText-color {
-    color: #3f2715;
-}
-
 .introducing-Block {
     padding-top: 4rem;
 }
@@ -98,6 +94,10 @@ body{
     width: 100%;
     height: 100vh;
     background-color: rgba(127, 205, 254, 0.112);
+}
+
+hr {
+    border-color:rgb(186, 113, 23);
 }
 
 .card-color {

@@ -22,9 +22,6 @@ $(function(){
             $(".fa-cog")[0].classList.remove("fa-spin");
         }, 1500);
     }
-    
-
-    
 
     $(".fa-cog")[0].onclick = function(){
         $(".fa-cog")[0].classList.add("fa-spin");
@@ -35,4 +32,12 @@ $(function(){
     
     let shoppingList = [];
     $(".badge")[0].innerHTML = shoppingList.length;
+
+    $(".userIcon")[0].onmouseover = function(){
+        $(".downList")[0].style.display = "flex";
+    }
+
+    document.body.onclick = function(){
+        $(".downList")[0].style.display = "none";
+    }
 })

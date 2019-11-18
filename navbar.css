@@ -1,5 +1,13 @@
 .bg-dropDown{
-    background-color: #ffa35d;
+    background-color: #eb9451;
+}
+
+.itemText-color {
+    color: rgb(111, 72, 14);
+}
+
+.itemText-color:hover {
+    color: rgb(67, 41, 2);
 }
 
 .icon {
@@ -28,4 +36,152 @@
     .minusMg{
         padding: 0;
     }
+}
+
+.horizon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+[class *= "gri-"] {
+    padding: 15px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .gri-m-1 {
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .gri-m-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .gri-m-3 {
+        flex: 0 0 25%;
+        max-width: 25;
+    }
+    .gri-m-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .gri-m-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .gri-m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .gri-m-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .gri-m-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .gri-m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .gri-m-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .gri-m-11 {
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .gir-m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .gri-l-1 {
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .gri-l-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .gri-l-3 {
+        flex: 0 0 25%;
+        max-width: 25;
+    }
+    .gri-l-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .gri-l-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .gri-l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .gri-l-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .gri-l-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .gri-l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .gri-l-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .gri-l-11 {
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .gir-l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.finger:hover {
+    cursor: pointer;
+}
+
+.downList {
+    display: none;
+    flex-wrap: wrap;
+    min-width: 10rem;
+    background-color: #eb9451;
+    padding: 8px 0;
+    margin: 2px 0 0 ;
+    border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+    .downList {
+        position: absolute;
+    }
+}
+
+.dlItem {
+    width: 100%;
+    padding: 4px 24px;
+}
+
+a.dlItem {
+    color: rgb(111, 72, 14);
+    text-decoration: none;
+} 
+
+a.dlItem:hover {
+    background-color: rgb(245, 244, 244);
+    color: rgb(67, 41, 2);
 }
