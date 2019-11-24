@@ -1,52 +1,77 @@
 $(function(){
 
-    // $(window).resize(function(){
-    //     let x = $(window).width();
-    //     console.log(x);
-    //     if(x <= 320 ){
-    //         $(".minusMg").removeClass("container");
-    //         $(".navbar,.navbar-dark").addClass("px-0");
+    for(i = 0; i < $(".shoppingList").length; i++){
+        let shoppingList = [];
+        $(".shoppingList")[i].innerHTML = shoppingList.length;
+    }
+    
+
+    //To show and hide user drop-down list
+    // console.log($(".downList")[0].classList.value);
+
+    // window.onclick = function(evt){
+        // console.log(evt);
+    //     console.log(event);
+        // console.log(event.target);   
+        // console.log(event.target.className);
+    //     console.log(typeof(event.target));
+    //     console.log(event.toElement);
+    //     console.log(/userIcon/.test(event.target.className));
+    //     event.target.classList.add("distinguish");
+    //     if (/listTrigger/m.test(event.target)){
+    //         console.log("x");
+    //         console.log($(".listTrigger")[0]);
+    //         let x = event.target
+    //         $(".downList")[1].classList.add("showList");
     //     }
-    //     if(x > 320) {
-    //         $(".minusMg").addClass("container");
-    //         $(".navbar,.navbar-dark").removeClass("px-0");
+    //     else if(/fa-cog/m.test(event.target.className) ||  
+    //             /downList/m.test(event.target.className) ){
+    //         $(".downList")[1].classList.add("showList");
+    //     }
+    //     else{
+    //         $(".downList")[1].classList.remove("showList");
+    //     }    
+    // }
+
+    // $(".listHover").mouseover(function(){
+    //     $(".downList").removeClass("showList");
+    //     event.target.classList.add("on-the-top");       
+    //     for(i = 0; i < $(".listHover").length; i++){
+    //         if(/on-the-top/m.test($(".listHover")[i].className)){
+    //             $(".hoverList")[i].classList.add("showList");
+    //             $(".listHover").removeClass("on-the-top");
+    //         }
     //     }
     // })
 
-    $(".fa-cog")[0].onmouseover = function(){
-        $(".fa-cog")[0].classList.add("fa-spin");
-    }
-
-    $(".fa-cog")[0].onmouseout = function(){
+    // $(".listHover").mouseout(function(){
+    //     $(".hoverList").removeClass("showList");
+    // })
+    $(".fa-cog").click(function(){
+        $(".fa-cog").addClass("fa-spin");
         setTimeout(function(){
-            $(".fa-cog")[0].classList.remove("fa-spin");
-        }, 1500);
-    }
+            $(".fa-cog").removeClass("fa-spin");
+        },3000)
+    })
 
-    $(".fa-cog")[0].onclick = function(){
-        $(".fa-cog")[0].classList.add("fa-spin");
-        setTimeout(function(){
-            $(".fa-cog")[0].classList.remove("fa-spin");
-        },3000);
-    }
-    
-    let shoppingList = [];
-    $(".badge")[0].innerHTML = shoppingList.length;
-
-    $(window).resize(function(){
-        let x = $(window).width;
-        if (x >= 992) {
-            $(".userIcon")[0].onmouseover = function(){
-                $(".downList")[0].style.display = "flex";
-            }
-        }else{
-            $(".userIcon")[0].onclick = function(){
-                $(".downList")[0].style.display = "flex";
+    $(".listTrigger").click(function() {
+        event.target.classList.add("it-is-me-Mario")
+        for(i = 0; i < $(".listTrigger").length; i++){
+            let lT = $(".listTrigger")[i].className; 
+            if (/it-is-me-Mario/m.test(lT)){
+                $(".downList")[i].classList.toggle("showList");
+                $(".listTrigger").removeClass("it-is-me-Mario");
+            }else if(/listTrigger/m.test(lT)){
+                $(".downList")[i].classList.remove("showList");
             }
         }
     })
 
-    document.body.onclick = function(){
-        $(".downList")[0].style.display = "none";
-    }
+    window.onclick = function(){  
+        if(/listTrigger/.test(event.target.className)){
+        }else{
+            $(".downList").removeClass("showList");
+            $(".listTrigger").removeClass("it-is-me-Mario")
+        }
+    }       
 })

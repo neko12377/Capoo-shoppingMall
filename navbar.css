@@ -165,8 +165,28 @@
     border-radius: 5px;
 }
 
+.hoverList {
+    display: none;
+    flex-wrap: wrap;
+    min-width: 10rem;
+    background-color: #eb9451;
+    padding: 8px 0;
+    margin: 2px 0 0 ;
+    border-radius: 5px;
+}
+
+.showList {
+    display: flex;
+}
+
 @media (min-width: 992px) {
     .downList {
+        position: absolute;
+    }
+}
+
+@media (min-width: 992px) {
+    .hoverList {
         position: absolute;
     }
 }
@@ -184,4 +204,8 @@ a.dlItem {
 a.dlItem:hover {
     background-color: rgb(245, 244, 244);
     color: rgb(67, 41, 2);
+}
+
+.distinguish {
+    border: solid 1px red;
 }
