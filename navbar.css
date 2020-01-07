@@ -26,6 +26,10 @@
     top: 1px;
 }
 
+.thumbUp {
+    color: rgb(0, 115, 255);
+}
+
 @media (max-width: 768px) {
     .minusMg{
         margin: 0 -0.5rem 0 0;
@@ -208,4 +212,7 @@ a.dlItem:hover {
 
 .distinguish {
     border: solid 1px red;
+}
+
+.listTrigger {
 }

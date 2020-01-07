@@ -54,7 +54,7 @@ $(function(){
         },3000)
     })
 
-    $(".listTrigger").click(function() {
+    function dropDownList() {
         event.target.classList.add("it-is-me-Mario")
         for(i = 0; i < $(".listTrigger").length; i++){
             let lT = $(".listTrigger")[i].className; 
@@ -65,7 +65,9 @@ $(function(){
                 $(".downList")[i].classList.remove("showList");
             }
         }
-    })
+    }
+    
+    $(".listTrigger").click(dropDownList);
 
     window.onclick = function(){  
         if(/listTrigger/.test(event.target.className)){
@@ -73,5 +75,5 @@ $(function(){
             $(".downList").removeClass("showList");
             $(".listTrigger").removeClass("it-is-me-Mario")
         }
-    }       
+    }     
 })
